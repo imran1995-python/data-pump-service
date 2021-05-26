@@ -7,7 +7,7 @@ Docker data pump service to fetch SQS message count and send it to a webhook
 3. Open ***cmd*** in the project directory
 4. Build docker image
     ```commandline
-    docker build --tag data-pump-service
+    docker build --tag data-pump-service .
     ```
 5. Run docker image <br/>
     This command will take deafult service frequency (in mins) from env file <br/>
