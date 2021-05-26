@@ -14,7 +14,8 @@ Docker data pump service to fetch SQS message count and send it to a webhook
    ```commandline
     docker run --env-file env data-pump-service
    ```
-   <br/>**or**<br/>
+   **or**<br/>
+    This command will take the frequency value given in ***frequency=*** param
     ```commandline
     docker run --env-file env -e frequency=5 data-pump-service
     ```
