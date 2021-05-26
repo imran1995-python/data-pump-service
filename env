@@ -1,0 +1,6 @@
+aws_access_key_id=YOUR_AWS_ACCESS_KEY_ID
+aws_secret_access_key=YOUR_AWS_SECRET_KEY_ID
+aws_region=YOUR_AWS_REGION
+sqs_queue_url=YOUR_SQS_QUEUE_URL
+webhook_url=YOUR_WEBHOOK_URL
+default_frequency=1
