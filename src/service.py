@@ -33,8 +33,8 @@ class PumpData():
             logger.info(f"{_message_count} messages found in the queue")
         except Exception as ex:
             logger.error("Data was not fetched from SQS queue successfully")
-            logger.exception(ex)
-            logging.info('Service failed')
+            logger.error(f"Exception: {ex}")
+            logger.info('Service failed')
             return
 
         self.post_data(_message_count)
@@ -55,8 +55,8 @@ class PumpData():
             logger.info("Data sent to webhook")
         except Exception as ex:
             logger.error("Data was not sent to webhook")
-            logger.exception(ex)
-            logging.info('Service failed')
+            logger.error(f"Exception: {ex}")
+            logger.info('Service failed')
             return
 
         logger.info('Service successful')
