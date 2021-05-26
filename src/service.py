@@ -34,6 +34,7 @@ class PumpData():
         except Exception as ex:
             logger.error("Data was not fetched from SQS queue successfully")
             logger.exception(ex)
+            logging.info('Service failed')
             return
 
         self.post_data(_message_count)
@@ -55,6 +56,10 @@ class PumpData():
         except Exception as ex:
             logger.error("Data was not sent to webhook")
             logger.exception(ex)
+            logging.info('Service failed')
+            return
+
+        logger.info('Service successful')
 
 
 if __name__=="__main__":
