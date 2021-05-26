@@ -1,5 +1,5 @@
 # data-pump-service
-Docker data pump docker service to fetch SQS queue message count and 
+Docker data pump service to fetch SQS queue message count and send it to a webhook 
 
 ## Usage
 1. Place your service environment configurations in **env** file
@@ -9,11 +9,12 @@ Docker data pump docker service to fetch SQS queue message count and
 	```
 	docker build --tag data-pump-service .
 	```
-5. Run docker image
+5. Run docker image<br />
 		This command will take default service frequency (in mins) from env file <br />
 		```
 		docker run --env-file env data-pump-service
-		```<br />
+		```
+		<br />
 	**or**<br />
 		This command will take the frequency value (in mins) given in ***frequency=*** cmd variable<br />
 		```
