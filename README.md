@@ -1,7 +1,7 @@
-#data-pump-service
+# data-pump-service
 Docker data pump service to fetch SQS message count and send it to a webhook
 
-##Usage
+## Usage
 1. Place your service environment configurations in **env** file
 2. Run docker on your local machine
 3. Open ***cmd*** in the project directory
